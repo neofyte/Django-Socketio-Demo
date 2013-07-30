@@ -1,0 +1,29 @@
+Django-Socketio-Demo
+====================
+
+This minimal example uses django together with gevent to implement a real-time chatroom (or a meeting room).
+
+Introduction
+============
+
+This repo implements a real-time chatroom with websocket protocol, which is a substitution of tech such as ajax long polling etc. Socketio originally runs on node.js and chooses for browsers among websocket, long polling etc to implement real-time things. Websocket is different in that it is a server-push tech instead of a pulling tech eg. long polling. Interested reader can google for more info about this tech. An expository article can be found on IBM developer site. (Google it)
+
+Further Furnishment
+===================
+
+I will try to add redis and other celery, mq stuff.
+
+Dependencies
+============
+
+- Python27
+- Django1.5
+- Gevent1.0
+- Gevent-Websocket
+- Gevent-Socketio
+
+Reference
+=========
+
+- flask-socketio-demo (a git repo, a simple search in github will get you to that repo)
+- the django chat-room example in gevent-socketio(the run_socketio.py is copied balantly and verbatimly from there)
